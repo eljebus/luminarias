@@ -1,0 +1,136 @@
+@import "style.styl"
+
+
+#superior
+	background: #fff8ce
+	#superior-interno
+		max-width 942px
+		margin auto
+		padding-bottom 0.5em
+		padding-top 0.5em
+		padding-left 1em
+		padding-right 1em
+
+#principal
+	max-width 942px
+	margin auto
+	padding-bottom 4em
+	padding-left 1em
+	padding-right 1em
+
+	#img
+		width 100%
+		overflow hidden
+		height 350px
+		position relative
+		img
+			margin-top: -20em;
+			margin-left: -39em;
+	#mapa
+		margin-top 2em
+		display inline-block
+		vertical-align top
+		width 60%
+		position relative
+
+		iframe
+			width 100%
+			height 300px
+	#datos
+		width 320px
+		display inline-block
+		vertical-align top
+		position relative
+		margin-top -3em
+		margin-left 2%
+		height 544px
+		padding-top 4em
+		address
+			font-style normal
+		h3
+			fon-weight normal
+	#contacto
+		width 60%
+		margin-top -9em
+		margin-bottom 2em
+		input
+			width 50%
+			margin-bottom 0.5em
+		textarea
+			margin-top -5.5em
+			width 49%
+			height: 7.7em;
+		input[type='submit']
+			width 39%
+			background url(../img/boton.png)
+			background-size 100% 100%
+			color white
+
+@media screen and (max-width:1180px)
+	#principal
+		#mapa,#contacto
+			width 55%
+@media screen and (max-width:855px)
+	#principal
+		padding-bottom 13em
+		#img
+			height 250px
+		#mapa,#contacto,#datos
+			width 100%
+			display block
+		#contacto
+			margin 0
+			margin-top 1em
+		#datos
+			margin-left 0
+			margin-top 1em
+			height auto
+			padding-top 0
+			address
+				padding-right 1em
+				box-sizing border-box
+			article,address
+				width 49%
+				display inline-block
+				vertical-align top
+
+		.desapareceP
+			display none
+
+@media screen and (max-width:770px)
+	.blockResponsive
+		display block
+		margin-top 0.5em
+	.desaparece
+		display none
+	#superior-interno
+		text-align  center
+
+
+@media screen and (max-width:460px)
+	#principal
+		margin-bottom 9em
+		#img
+			height 150px
+			img
+				margin-top: -15em;
+				margin-left: -34em;
+				width: 400%;
+		#contacto
+			input,textarea 
+				width 100%
+			textarea
+				margin-top 0.5em
+				margin-bottom 0.5em
+		#datos
+			article,address
+				width 100%
+	
+
+
+
+	
+
+
+
+  		

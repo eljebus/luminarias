@@ -1,0 +1,87 @@
+@import "style.styl"
+
+
+#superior
+	background: #fff8ce
+	#superior-interno
+		max-width 942px
+		margin auto
+		padding-bottom 0.5em
+		padding-top 0.5em
+		padding-left 1em
+		padding-right 1em
+
+
+#principal
+	max-width 942px
+	margin auto
+	min-height 400px
+	margin-bottom 2em
+	padding-left 1em
+	padding-right 1em
+	#foto
+		overflow hidden
+		img
+			width 100%
+	.relleno
+		height 50px
+		background #373435;
+	.nota
+		width 80%
+		margin auto
+		margin-top -2em
+		position relative
+		form
+			width 40%
+			margin-right 9%
+			vertical-align top
+			h3
+				font-weight normal
+				margin-top 0
+			input
+				width 100%
+				margin-bottom 0.5em
+			input[type='submit'] 
+				width: 200px;
+				background: url("http://localhost:8000/css/../img/boton.png");
+				background-size: 100% 100%;
+				color: #fff;
+
+		article
+			width 50%
+			vertical-align top
+
+@media screen and (max-width:855px)
+
+	#principal .nota
+		width 90%
+
+@media screen and (max-width:770px)
+	#principal 
+		#foto
+			height auto
+			img
+				width 100%
+		.relleno
+			margin-top -5px
+				
+		.nota
+			form
+				width 90%
+				margin-bottom 1em
+			article 
+				width 100%
+
+@media screen and (max-width:460px)
+	#principal
+		.relleno
+			display none
+		.nota
+			margin-top 0
+			width 100%
+			margin-top 1em
+			form
+				width 100%
+				input[type='submit']
+					width 100%
+				
